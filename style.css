@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body {font-family: 'Poppins', sans-serif;
+background-image: url("lindentrack.jpg") ;
+background-size :cover;
+background-image: no-repeat;}
+
+.container { width: 80%;
+     margin: auto;
+     ;
+}
+/* header start  */
+header {height: 140px;
+border-bottom: 2px solid rgba(255,255,255,0.06)}
+
+header nav{ display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;}
+
+header nav .logo a { color :white;
+text-decoration: none;
+font-weight: 700;
+font-size: 20px;}
+
+nav .menu{display: flex;
+align-items: center;
+column-gap: 48px;}
+
+nav ul{list-style: none;
+display: flex;
+column-gap: 40px;}
+
+nav .menu ul a{ color: white;
+text-decoration: none;
+font-size: 16px;
+font-weight: 700;}
+
+nav ul li a:hover {
+color: rgb(248, 211, 211);    
+
+transition: color .8s ease}
+
+
+.menu-button { color: rgb(213, 229, 236);
+text-decoration: none;
+font-size: 14px;
+font-weight: 700;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgba(133, 194, 220, 0.443);
+padding: 12px 24px;
+border-radius: 30px ;}
+.menu-button:hover{ color: rgb(244, 241, 238);
+    background-color: rgb(186, 219, 194);
+    transition: background-color 0.9s ease;
+}
+
+/* header end */
+
+/* responsive tags start */
+@media( max-width: 800px) {.container 
+{width:90%;
+padding-left: 12px;
+padding-right: 12px;} 
+.menu-button {display: none;}
+.menu ul{ column-gap: 15px;}
+}
+
+/*  responsive tags end*/
+
+/* section tags starts */
+
+.content{color: white;
+height: 100vh;
+padding-top: 150px;
+}
+.content h1 {font-size: 60px;
+    text-align: center;
+}
+.content p {font-size: 24px;
+text-align: center;
+margin-top: 32px;}
+
+.content .links{color: white;
+    display: flex;
+    justify-content:center ;
+    margin-top: 48px;
+    column-gap: 24px;
+}
+.content .links a {background-color: white;
+padding: 12px;
+width: 280px;
+color: black;
+text-align: center;
+font-size: 18px;
+text-decoration: none;
+border-radius: 56px;
+}
+
+.content .links a:hover {background-color: rgb(186, 237, 220);
+    transition: all .25s ease-in;
+    color: rgb(67, 68, 66);
+    font-size: 18px;
+    font-weight: 40px;
+}
+
+
+/* section tags ends */
